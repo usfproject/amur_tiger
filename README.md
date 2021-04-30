@@ -16,8 +16,14 @@ All the paths to save and retrieve the files can be changed in **config.ini** fi
 ### **Run the training script on gaivi**
 
 We submitted our training jobs on gaivi server. Bash script is available in **trainer.sh**.
+We used 4-fold cross validation for training. To run for a respective fold, change the --fold argument in trainer.sh as shown below.
 
-We used 4-fold cross validation for training
+> srun python -u ppbm_fold.py  --fold=0 > fold0.out
+> srun python -u ppbm_fold.py  --fold=1 > fold1.out
+> srun python -u ppbm_fold.py  --fold=2 > fold2.out
+> srun python -u ppbm_fold.py  --fold=3 > fold.out
+
+
 Submit the job by running below command:
 
 > #sbatch trainer.sh
