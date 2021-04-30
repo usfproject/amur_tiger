@@ -19,8 +19,11 @@ We submitted our training jobs on gaivi server. Bash script is available in **tr
 We used 4-fold cross validation for training. To run for a respective fold, change the --fold argument in trainer.sh as shown below.
 
 > srun python -u ppbm_fold.py  --fold=0 > fold0.out
+
 > srun python -u ppbm_fold.py  --fold=1 > fold1.out
+
 > srun python -u ppbm_fold.py  --fold=2 > fold2.out
+
 > srun python -u ppbm_fold.py  --fold=3 > fold.out
 
 
