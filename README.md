@@ -24,7 +24,7 @@ We used 4-fold cross validation for training. To run for a respective fold, chan
 
 > srun python -u ppbm_fold.py  --fold=2 > fold2.out
 
-> srun python -u ppbm_fold.py  --fold=3 > fold.out
+> srun python -u ppbm_fold.py  --fold=3 > fold3.out
 
 
 Submit the job by running below command:
