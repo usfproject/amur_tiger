@@ -15,7 +15,9 @@ All the paths to save and retrieve the files can be changed in **config.ini** fi
 
 ### **Run the training script on gaivi**
 
-We submitted our training jobs on gaivi server. Bash script is available in **trainer.sh**
+We submitted our training jobs on gaivi server. Bash script is available in **trainer.sh**.
+
+We used 4-fold cross validation for training
 Submit the job by running below command:
 
 > #sbatch trainer.sh
