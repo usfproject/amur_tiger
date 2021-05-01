@@ -31,6 +31,10 @@ Submit the job by running below command:
 
 > #sbatch trainer.sh
 
+### **Download weights**
+
+Weights can be downloaded from the following link [weights.](https://drive.google.com/drive/folders/1aq__6ja3hJiqGl5eH5bQL-_9QE0w9Dxe?usp=sharing)
+
 ### **Evaluate the model**
 
 Run the below command to evaluate the model
