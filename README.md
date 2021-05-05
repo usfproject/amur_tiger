@@ -38,5 +38,6 @@ Weights can be downloaded from the following link [weights.](https://drive.googl
 ### **Evaluate the model**
 
 Run the below command to evaluate the model
+>  python testing.py
 
 > python evaluation_script.py
