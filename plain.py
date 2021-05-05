@@ -6,6 +6,9 @@ from sklearn.metrics import average_precision_score
 
 
 def eval_impl(anno,res,partial=False):
+    """
+    reference : https://github.com/cvwc2019/ATRWEvalScript/tree/main/atrwtool
+    """
     random.seed(114514)
     with open(anno,'r') as f:
         anno=json.load(f)
