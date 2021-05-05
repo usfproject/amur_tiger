@@ -78,6 +78,9 @@ def remove0(x):
             break
     return x
 def masked(img_path, x1, x2, x3, x4, y1, y2, y3, y4):
+    """
+    reference:https://github.com/LcenArthas/CVWC2019-Amur-Tiger-Re-ID
+    """
     img = cv2.imread(img_path)
     (h, w, c) = img.shape
     mask = np.zeros((h, w, 3), np.uint8)                                
@@ -107,6 +110,9 @@ def masked(img_path, x1, x2, x3, x4, y1, y2, y3, y4):
         return img_crop
 def find_bbox(x1,y1,x2,y2,root_dir,image_name,ind):
   '''
+   """
+    reference:https://github.com/LcenArthas/CVWC2019-Amur-Tiger-Re-ID
+    """
   This function gets bounding box around the limb parts.
   x1,y1,x2,y2:-coordinates of the rectangle
   root_dir:- directory of images
@@ -141,6 +147,9 @@ def find_bbox(x1,y1,x2,y2,root_dir,image_name,ind):
   
 def extract_paw(pos,image_name,root_dir,dest_dir):
   '''
+   """
+    reference:https://github.com/LcenArthas/CVWC2019-Amur-Tiger-Re-ID
+    """
   This function extracts limbs from the tiger image
   pos:- keypoints of the tiger
   image_name:- image_name to be extracted
@@ -170,6 +179,9 @@ def extract_paw(pos,image_name,root_dir,dest_dir):
           
 def extract_body(pos,image_name,root_dir,dest_dir):
   '''
+   """
+    reference:https://github.com/LcenArthas/CVWC2019-Amur-Tiger-Re-ID
+    """
   This function extracts trunk part of the tiger
   pos:- keypoints of the tiger
   image_name:- image_name to be extracted
@@ -217,6 +229,9 @@ def extract_body(pos,image_name,root_dir,dest_dir):
 
 def extract_parts(train_csv_with_flipped,keypoints_json_file,images_folder,destination_folder):
   '''
+   """
+    reference:https://github.com/LcenArthas/CVWC2019-Amur-Tiger-Re-ID
+    """
   This function extract trunk part and limbs from the tiger image.
   train_csv_with_flipped:- train csv which includes flipped images
   keypoints_json_file:- json file which includes keypoints for train and flipped images
@@ -237,6 +252,9 @@ def extract_parts(train_csv_with_flipped,keypoints_json_file,images_folder,desti
 
 def flip_images(train_csv_file,keypoints_json_file,root_dir,final_keypoints_json_file,final_keypoints_train_csv):
   '''
+   """
+    reference:https://github.com/LcenArthas/CVWC2019-Amur-Tiger-Re-ID
+    """
   This function flips images and generate keypoints for flipped images
   train_csv_file:- csv file with train data
   keypoints_json_file:- json file with keypoints
